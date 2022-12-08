@@ -1,0 +1,127 @@
+:root {
+  --cream: hsl(30, 38%, 92%);
+  ---darkCyan: hsl(158, 36%, 37%);
+  /* ### Neutral */
+  ---veryDarkBlue: hsl(212, 21%, 14%);
+  ---darkGrayishBlue: hsl(228, 12%, 48%);
+  ---white: hsl(0, 0%, 100%);
+  ---paragraph: 14px;
+  ---fraunces: "Fraunces", serif;
+  ---montserrat: "Montserrat", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--cream);
+  font-family: var(---montserrat);
+  margin: 0 auto;
+}
+.container {
+  display: flex;
+  max-width: 600px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.product {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: var(---white);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  flex: 1;
+}
+
+.product__img {
+  max-height: 400px;
+  max-width: 450px;
+  flex: 1;
+}
+.product__info {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+  padding: 32px;
+  flex: 1;
+}
+
+.product__tittle {
+  font-family: var(---fraunces);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  color: var(---veryDarkBlue);
+}
+.product__tittle--light {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 5px;
+  color: var(---darkGrayishBlue);
+  text-transform: uppercase;
+}
+
+#product__details {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  color: var(---darkGrayishBlue);
+}
+.price {
+  /* padding: 10px 0; */
+  display: flex;
+  gap: 15px;
+}
+.price__sale {
+  font-family: var(---fraunces);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  color: var(---darkCyan);
+}
+
+.price__original {
+  font-family: var(---montserrat);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 23px;
+  text-decoration-line: line-through;
+  color: var(---darkGrayishBlue);
+}
+
+button {
+  background-color: var(---darkCyan);
+  color: var(---white);
+  width: 100%;
+  padding: 16px;
+  border-radius: 8px;
+
+  font-family: var(---montserrat);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: 10px;
+}
+
+#iconCart {
+  margin-right: 10px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+  .product {
+    flex-direction: column;
+  }
+}
