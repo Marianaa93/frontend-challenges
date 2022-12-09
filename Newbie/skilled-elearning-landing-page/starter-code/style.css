@@ -1,0 +1,74 @@
+.root {
+  ---grayishBlue: #666ca3;
+  ---darkBlue: #13183f;
+  ---gray: #83869a;
+  ---pink: #ffa7c3;
+  ---fucsia: #f74780;
+  ---white: #ffffff;
+  ---gradientPink: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
+  ---gradientViolet: linear-gradient(180deg, #4851ff 0%, #f02aa6 99.92%);
+  ---fontSizeS: 24px;
+  ---fontSizeM: 32px;
+  ---fontSizeL: 40px;
+  ---fontSizeXL: 56px;
+  ---desktop: 1440px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  position: absolute;
+  justify-content: right;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin: 0 auto;
+}
+main {
+  display: flex;
+
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrap {
+  max-width: var(---desktop);
+  height: 100vh;
+}
+.nav_bar {
+  display: flex;
+  justify-content: space-between;
+  background-color: red;
+  width: 100%;
+}
+.nav__link a:link {
+  text-decoration: none;
+  color: var(---white);
+}
+.btn {
+  border-radius: 31.5px;
+  text-decoration: none;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  background: #13183f;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerlink a:link {
+  color: var(---white);
+}
+
+.btn--gradient {
+  background-color: green;
+  padding: 18px;
+  border-style: none;
+}
