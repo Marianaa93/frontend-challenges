@@ -30,6 +30,7 @@ body {
   border-radius: 20px;
   max-width: 450px;
   margin: 24px;
+  height: 100%;
 }
 
 .main {
@@ -37,6 +38,7 @@ body {
   flex-direction: column;
   padding: 48px;
   gap: 32px;
+  width: 100%;
 }
 
 img {
@@ -67,6 +69,7 @@ p {
   padding: 20px;
   border-radius: 11px;
   align-items: center;
+  width: 100%;
 }
 
 .price__wrap {
@@ -144,5 +147,23 @@ a:hover {
 @media (max-width: 400px) {
   .container {
     width: 375px;
+  }
+
+  .main {
+    padding: 24px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  p {
+    font-size: 15px;
+  }
+
+  #price__title,
+  #price__value {
+    font-size: 14px;
+  }
+  button {
+    width: 100%;
   }
 }
