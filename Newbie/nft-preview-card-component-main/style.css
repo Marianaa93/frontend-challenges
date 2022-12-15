@@ -1,0 +1,182 @@
+:root {
+  --mainBg: hsl(217, 54%, 11%);
+  --cardBg: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+  --softblue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --cyan-opacity: hsla(178 100% 50% / 30%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  background-color: var(--mainBg);
+  min-height: 100vh;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  font-family: "Overpass", sans-serif;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  width: 100%;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+.main {
+  background-color: var(--cardBg);
+  color: var(--white);
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
+  border-radius: 15px;
+  width: 350px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main__info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+#main__img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* #main__img:hover {
+  cursor: pointer;
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  backface-visibility: hidden;
+  background-color: var(--cyan);
+} */
+
+.hover__img {
+  transition: 0.5s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  height: 302px;
+  border-radius: 8px;
+  background-color: var(--cyan-opacity);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+}
+
+.card-img-overlay {
+  opacity: 1;
+}
+
+/* .main:hover #main__img {
+  opacity: 0.3;
+}
+
+.main:hover .card-img-overlay {
+  opacity: 1;
+} */
+
+#mainText {
+  font-weight: 300;
+  font-size: 15px;
+  color: var(--softblue);
+  margin: 0;
+}
+
+#mainTitle {
+  margin: 0;
+}
+
+.info__link {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  color: var(--white);
+  margin: 0;
+}
+
+.ethSpan {
+  color: var(--cyan);
+  font-weight: 600;
+}
+.avatar {
+  display: flex;
+  gap: 7px;
+  border-top: 10px;
+  border-color: white;
+}
+
+#avatar__img {
+  width: 33px;
+  height: 33px;
+  align-self: center;
+}
+
+#avatar__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--softblue);
+}
+
+.avatar__link {
+  color: var(--white);
+}
+
+.link {
+  text-decoration: none;
+}
+a:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
+.links__box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.span {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.equilibrium,
+.info__days {
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+}
+
+.clockSpan {
+  white-space: nowrap;
+}
+
+.section__img {
+  position: relative;
+  cursor: pointer;
+}
+
+.section__img:hover .hover__img {
+  opacity: 1;
+}
