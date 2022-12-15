@@ -57,21 +57,35 @@ p {
   color: var(--lightGrey);
   margin-bottom: 24px;
 }
-
-ul {
+form {
   display: flex;
   justify-content: space-between;
-  padding: 0;
-  margin-bottom: 32px;
-  gap: 22px;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-li {
-  width: 100%;
-  justify-content: space-between;
-  list-style: none;
+label {
+  background-color: hsl(213, 19%, 23%);
+  height: 2.75rem;
+  width: 2.75rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(217, 12%, 63%);
 }
-.btn__list {
+
+input {
+  display: none;
+}
+
+input:checked + label {
+  transition: all 0.5s;
+  background-color: var(--lightGrey);
+  color: var(--white);
+}
+
+/* .btn__list {
   background-color: var(--darkBlue);
   border-radius: 75%;
   padding: 14px 20px 14px 20px;
@@ -83,10 +97,12 @@ li {
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.2px;
-}
+} */
 
-.btn__list:focus {
+form label:hover {
   background-color: var(--orange);
+  color: white;
+  cursor: pointer;
 }
 
 button {
@@ -97,6 +113,7 @@ button {
   border-style: none;
   text-transform: uppercase;
   padding: 14px;
+  margin-top: 32px;
   margin-bottom: 2px;
   cursor: pointer;
 }
@@ -111,11 +128,17 @@ button {
 
 .submited__text {
   color: var(--orange);
-  background-color: var(--darkBlue);
+  display: contents;
 }
 .text {
-  background-color: var(--darkBlue);
-  width: 50%;
+  margin-top: 1.5rem;
+  background-color: hsl(213, 19%, 23%);
+  border-radius: 15px;
+  height: 2rem;
+  width: 11.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .wrap__submitted {
