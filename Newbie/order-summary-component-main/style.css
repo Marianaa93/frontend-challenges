@@ -14,6 +14,7 @@
 body {
   background-color: var(--backgroundBlue);
   background-image: url(./images/pattern-background-desktop.svg);
+  background-size: 100%;
   background-repeat: no-repeat;
   min-height: 100vh;
   margin: 0 auto;
@@ -28,6 +29,7 @@ body {
   box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
   border-radius: 20px;
   max-width: 450px;
+  margin: 24px;
 }
 
 .main {
@@ -37,8 +39,9 @@ body {
   gap: 32px;
 }
 
-.main__image {
+img {
   border-radius: 20px 20px 0px 0px;
+  width: 100%;
 }
 h2 {
   font-weight: 900;
@@ -77,6 +80,7 @@ p {
   font-size: 16px;
   line-height: 21px;
   color: var(--darkBlue);
+  white-space: nowrap;
 }
 .price__plan {
   display: flex;
@@ -113,6 +117,7 @@ button {
   box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
   border-radius: 11px;
   border-style: none;
+  width: 100%;
 }
 
 button:hover {
@@ -132,7 +137,12 @@ button:hover {
 #linkCancel:hover {
   color: var(--darkBlue);
 }
-
 a:hover {
   cursor: pointer;
+}
+
+@media (max-width: 400px) {
+  .container {
+    width: 375px;
+  }
 }
