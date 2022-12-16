@@ -4,7 +4,130 @@
   --grayishBlue: hsl(212, 23%, 69%);
   --lightGrayisBlue: hsl(210, 46%, 95%);
 }
-
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: "Manrope", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.container {
+  background-color: #ffff;
+  box-shadow: 0px 40px 40px -10px rgba(201, 213, 225, 0.503415);
+  border-radius: 10px;
+  width: 730px;
+  display: flex;
+}
+.container__image {
+  width: 100%;
+}
+
+.main__img {
+  width: 100%;
+  height: 100%;
+}
+.main_infos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px 30px 17px 50px;
+}
+
+#avatarImg {
+  border-radius: 50%;
+  width: 40px;
+}
+.contact__img {
+  width: 100%;
+}
+.main__contact {
+  display: flex;
+}
+
+.contact__img {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+#date {
+  margin-top: 2px;
+}
+
+p {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  color: var(--desaturatedDarkBlue);
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  color: var(--veryDarkGrayishBlue);
+}
+#contact_name {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 20px;
+  color: var(--veryDarkGrayishBlue);
+}
+
+.main__contact .share #share-icon {
+  display: block;
+  bottom: 1.5rem;
+  right: 2rem;
+  width: auto;
+  background: var(--lightGrayisBlue);
+  padding: 0.5rem;
+  border-radius: 50%;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.main__contact .share-links {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  /* width: 100%; */
+  height: 0%;
+  overflow: hidden;
+  z-index: 0;
+  transition: all 0.3s ease-in;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  box-shadow: 0px 10px 10px rgba(201, 213, 225, 0.503415);
+}
+.main__contact.active .share-links {
+  height: auto;
+  padding: 1.5rem 2rem 1.75rem 2rem;
+  background-color: var(--veryDarkGrayishBlue);
+  color: var(--grayishBlue);
+}
+.share-links span {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.share-links a:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .main__contact .share-links {
+    width: 1005;
+  }
 }
