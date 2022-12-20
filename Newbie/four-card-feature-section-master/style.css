@@ -132,11 +132,15 @@ span {
     align-items: center;
   }
   .cards {
-    width: 311px;
+    width: 100%;
     gap: 24px;
   }
 
   .vertically {
     gap: 24px;
+  }
+
+  .card__calculator {
+    margin-bottom: 78px;
   }
 }
