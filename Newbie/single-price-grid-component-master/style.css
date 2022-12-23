@@ -1,0 +1,39 @@
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --brightYellow: hsl(71, 73%, 54%);
+  --lightGray: hsl(204, 43%, 93%);
+  --grayishBlue: hsl(218, 22%, 67%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: var(--lightGray);
+}
+
+.container {
+  width: 635px;
+  background-color: #ffff;
+  padding: 40px;
+}
+
+.subscription__infos {
+  display: flex;
+}
+.price {
+  background-color: var(--cyan);
+  flex: 1;
+}
+
+.about {
+  flex: 1;
+}
