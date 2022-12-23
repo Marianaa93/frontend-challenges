@@ -1,4 +1,4 @@
-const wrapsubmit = document.querySelector("#wrapSubmit");
+const wrapSubmit = document.querySelector("#wrapSubmit");
 const wrapSubmited = document.querySelector(".wrap__submitted");
 const form = document.querySelector(".rating-form");
 const selector = "input[name=ratings]:checked";
@@ -14,7 +14,7 @@ form.addEventListener("submit", function (e) {
     const selectedRating = document.querySelector("#selection");
     selectedRating.textContent =
       "You selected " + checkedInput.getAttribute("value") + " out of 5";
-    wrapsubmit.style.display = "none";
+    wrapSubmit.style.display = "none";
     wrapSubmited.style.display = "block";
   }
 });
