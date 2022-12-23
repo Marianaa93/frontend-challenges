@@ -15,7 +15,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
+  margin: 0;
   min-height: 100vh;
   background-color: var(--lightGray);
 }
@@ -144,4 +144,24 @@ button {
 }
 p {
   margin-top: 18px;
+}
+
+@media (max-width: 450px) {
+  .main {
+    padding: 32px;
+  }
+  .container {
+    width: 100%;
+  }
+  .subscription__infos {
+    flex-direction: column;
+  }
+
+  .about {
+    border-bottom-right-radius: 0;
+  }
+
+  .price {
+    border-bottom-left-radius: 0;
+  }
 }
