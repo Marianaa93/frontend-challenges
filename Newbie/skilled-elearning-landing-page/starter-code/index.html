@@ -9,79 +9,154 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet">
 
   </head>
 
   <body>
+
     <main>
-      <div class="wrap">
+      <div class="container">
         <nav class="nav_bar">
-          <a class="nav__link" href="#" src="#">skilled</a>
+          <p class="nav__link" href="#" src="#">skilled</p>
           <button class="btn nav_bar__button">Get Started</button>
+
+
         </nav>
+        <div class="header_container">
 
-        <section class="banner">
-          <div class="banner_infos">
-            <h1 id="bannerTittle">Maximize skill, minimize budget
+          <header class="header_infos">
+            <h1 id="headerTittle">Maximize skill,<br> minimize budget
             </h1>
-            <p id="bannerText">Our modern courses across a range of in-demand skills will give you the
-              knowledge you need to live the life you want.</p>
-            <button class="btn banner__button">Get Started</button>
+            <p id="headerText">Our modern courses across a range of in-demand <br>skills will give you the
+              knowledge you need to live<br> the life you want.</p>
+            <button class="btn header__button">Get Started</button>
+          </header>
+          <div class="img_container">
+            <img src="./assets/image-hero-tablet.png">
           </div>
-          <!-- <img src="./assets/image-hero-tablet.png"> -->
+        </div>
+        <div class="grid">
+          <h2 class="courses course--pink ">Check out our most popular courses!</h2>
 
-        </section>
-
-
-        <h2>Check out our most popular courses!</h2>
-
-        <section class="courses">
-          <div class="courses__animation">
-            <h4 class="courses__title">Animation</h4>
-            <p class="courses__text">Learn the latest animation techniques to create stunning motion
+          <div class="course courses">
+            <img class="grid_img" src="./assets/icon-animation.svg" />
+            <h4 class="course courses__title">Animation</h4>
+            <p class="course courses__text">Learn the latest animation techniques to create stunning motion
               design and captivate your audience.</p>
-            <a class="courses__link">Get Started</a>
+            <a class="course courses__link">Get Started</a>
           </div>
 
-          <div class="courses__design">
-            <h4 class="courses__title">Design</h4>
+          <div class="course courses">
+            <img class="grid_img" src="./assets/icon-design.svg" />
+            <h4 class=" courses__title">Design</h4>
             <p class="courses__text"> Create beautiful, usable interfaces to help shape the future of
               how the web looks.</p>
             <a class="courses__link">Get Started </a>
           </div>
 
-          <div class="courses__photography">
+          <div class="course courses">
+            <img class="grid_img" src="./assets/icon-photography.svg" />
             <h4 class="courses__title">Photography</h4>
             <p class="courses__text">Explore critical fundamentals like lighting, composition, and focus
               to capture exceptional photos.</p>
             <a class="courses__link">Get Started </a>
           </div>
 
-          <div class="courses__crypto">
-            <h4 class="courses__title">Crypto</h4>
+          <div class=" course courses">
+            <img class="grid_img" src="./assets/icon-crypto.svg">
+            <h4 class=" courses__title">Crypto</h4>
             <p class="courses__text">All you need to know to get started investing in crypto.</p> Go from beginner
             to advanced with this 54 hour course.</p>
             <a class="courses__link">Get Started </a>
           </div>
 
-          <div class="courses__business">
+          <div class="course courses">
+            <img class="grid_img" src="./assets/icon-business.svg" />
             <h4 class="courses__title">Business</h4>
             <p class="courses__text"> A step-by-step playbook to help you start, scale, and sustain your business
               without outside investment.</p>
             <a class="courses__link">Get Started </a>
           </div>
 
-        </section>
-
-      </div>
-      <footer>
-        <div class="footer">
-          <a class="footerLink" href="#" src="#">skilled</a>
-          <button class="btn btn--gradient">Get Started</button>
         </div>
-      </footer>
+      </div>
     </main>
+    <footer></footer>
   </body>
 
 </html>
+
+
+<!-- <main> -->
+<!-- <img src="./assets/image-hero-tablet.png"> -->
+<!-- <div>
+    <nav class="nav_bar">
+      <a class="nav__link" href="#" src="#">skilled</a>
+      <button class="btn nav_bar__button">Get Started</button>
+    </nav>
+
+    <section class="header">
+
+      <div class="header_infos">
+        <h1 id="headerTittle">Maximize skill, minimize budget
+        </h1>
+        <p id="headerText">Our modern courses across a range of in-demand skills will give you the
+          knowledge you need to live the life you want.</p>
+        <button class="btn header__button">Get Started</button>
+      </div>
+
+
+    </section>
+
+
+
+    <section class="courses">
+      <h2>Check out our most popular courses!</h2>
+
+      <div class="courses__animation">
+        <h4 class="courses__title">Animation</h4>
+        <p class="courses__text">Learn the latest animation techniques to create stunning motion
+          design and captivate your audience.</p>
+        <a class="courses__link">Get Started</a>
+      </div>
+
+      <div class="courses__design">
+        <h4 class="courses__title">Design</h4>
+        <p class="courses__text"> Create beautiful, usable interfaces to help shape the future of
+          how the web looks.</p>
+        <a class="courses__link">Get Started </a>
+      </div>
+
+      <div class="courses__photography">
+        <h4 class="courses__title">Photography</h4>
+        <p class="courses__text">Explore critical fundamentals like lighting, composition, and focus
+          to capture exceptional photos.</p>
+        <a class="courses__link">Get Started </a>
+      </div>
+
+      <div class="courses__crypto">
+        <h4 class="courses__title">Crypto</h4>
+        <p class="courses__text">All you need to know to get started investing in crypto.</p> Go from beginner
+        to advanced with this 54 hour course.</p>
+        <a class="courses__link">Get Started </a>
+      </div>
+
+      <div class="courses__business">
+        <h4 class="courses__title">Business</h4>
+        <p class="courses__text"> A step-by-step playbook to help you start, scale, and sustain your business
+          without outside investment.</p>
+        <a class="courses__link">Get Started </a>
+      </div>
+
+    </section>
+  </div>
+
+  <footer>
+    <div class="footer">
+      <a class="footerLink" href="#" src="#">skilled</a>
+      <button class="btn btn--gradient">Get Started</button>
+    </div>
+  </footer>
+</main> -->
