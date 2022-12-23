@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+    <title>Frontend Mentor | Pod request access landing page</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="logo_section">
+        <img src="./assets/desktop/logo.svg" class="logo">
+      </div>
+
+      <section class="main">
+        <h1><span id="title__span">Publish your podcasts</span> everywhere.
+        </h1>
+
+        <p id="content__paragraph"> Upload your audio to Pod with a single click. We’ll then distribute your podcast
+          to Spotify,
+          Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
+
+        <form id="form" action="">
+          <input type="email" name="email" id="email" placeholder="Email Address" maxlength="30">
+          <input type="submit" id="request" value="Request Access"></input>
+        </form>
+        <small class="error"></small>
+
+        <section class="social_medias__box">
+          <div class="social__medias">
+            <a href=""><img class="social" src="./assets/desktop/spotify.svg" alt=""></a>
+            <a href=""><img class="social" src="./assets/desktop/apple-podcast.svg" alt=""></a>
+            <a href=""><img class="social" src="./assets/desktop/google-podcasts.svg" alt=""></a>
+            <a href=""><img class="social" src="./assets/desktop/pocket-casts.svg" alt=""></a>
+          </div>
+        </section>
+      </section>
+    </div>
+    <footer>
+      <img src="./assets/desktop/bg-pattern-dots.svg" alt="">
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+
+</html>
