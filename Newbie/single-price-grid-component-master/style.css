@@ -23,7 +23,32 @@ body {
 .container {
   width: 635px;
   background-color: #ffff;
+}
+
+.infos {
   padding: 40px;
+}
+
+#infos__title {
+  color: var(--cyan);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+#infos__span {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--brightYellow);
+}
+
+#infos__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.2px;
+  color: var(--grayishBlue);
 }
 
 .subscription__infos {
@@ -32,8 +57,87 @@ body {
 .price {
   background-color: var(--cyan);
   flex: 1;
+  padding: 40px;
+  justify-content: center;
+}
+
+#priceTittle {
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: -0.225px;
+  color: #ffffff;
+}
+.price__tag {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+#priceTag {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 37px;
+  letter-spacing: -0.4px;
+  color: #ffffff;
+}
+h5 {
+  margin: 0;
+}
+
+#priceMonth {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.2px;
+  color: var(--lightGray);
+  opacity: 0.5;
+}
+
+#priceInfo {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #ffffff;
+  margin-top: 0;
 }
 
 .about {
   flex: 1;
+  background-color: var(--cyan);
+  opacity: 0.9;
+  padding: 40px;
+}
+
+#aboutTitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: -0.225px;
+  color: #ffffff;
+}
+
+#aboutInfos {
+  font-weight: lighter;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.175px;
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+button {
+  border-radius: 5px;
+  padding: 16px;
+  width: 100%;
+  background-color: var(--brightYellow);
+  border-style: none;
+  outline: 0;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.0973011);
+  margin-top: 26px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+}
+p {
+  margin-top: 18px;
 }
