@@ -9,7 +9,6 @@ function submitBtn(event) {
     /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   if (re.test(email.value)) {
     error.innerText = "";
-    console.log("ok");
   } else {
     error.innerText = "ooops!check your email";
   }
