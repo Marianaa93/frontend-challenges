@@ -1,0 +1,68 @@
+:root {
+  --lightCyan: hsl(193, 38%, 86%);
+  --neonGreen: hsl(150, 100%, 66%);
+  --grayishblue: hsl(217, 19%, 38%);
+  --darkGrayishBlue: hsl(217, 19%, 24%);
+  --darkBlue: hsl(218, 23%, 16%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--darkBlue);
+  font-family: "Manrope", sans-serif;
+}
+
+.container {
+  width: 540px;
+  padding: 48px;
+  background-color: var(--darkGrayishBlue);
+  box-shadow: 30px 50px 80px rgba(0, 0, 0, 0.100202);
+  border-radius: 15px;
+  position: relative;
+}
+
+.advice {
+  /* position: relative; */
+}
+
+p {
+  color: var(--neonGreen);
+  font-weight: 800;
+  font-size: 13px;
+  line-height: 18px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 4.08571px;
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 38px;
+  text-align: center;
+  letter-spacing: -0.3px;
+  color: var(--lightCyan);
+}
+
+#icon-dice {
+  align-content: center;
+  position: absolute;
+  padding: 16px;
+  top: 90%;
+  left: 45%;
+  background-color: var(--neonGreen);
+  border-radius: 25px;
+}
+
+#icon-dice:hover {
+  cursor: pointer;
+  box-shadow: 0 1px 16px hsl(150, 100%, 66%);
+}
