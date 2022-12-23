@@ -119,4 +119,6 @@ input[type="submit"]:hover {
 footer {
   width: 100%;
   text-align: -webkit-right;
+  position: absolute;
+  margin-top: 37%;
 }
