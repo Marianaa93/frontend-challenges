@@ -122,3 +122,34 @@ footer {
   position: absolute;
   margin-top: 37%;
 }
+
+@media (max-width: 675px) {
+}
+@media (max-width: 1400px) {
+  body {
+    background-image: url("./assets/tablet/image-host.jpg");
+    background-position: top right;
+  }
+  .container {
+    padding-right: 94px;
+    padding-left: 22px;
+    padding-bottom: 180px;
+    gap: 200px;
+  }
+  .main {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 39px;
+  }
+
+  footer {
+    width: 100%;
+    position: relative;
+  }
+
+  input[type="email"] {
+    width: 70%;
+  }
+}
