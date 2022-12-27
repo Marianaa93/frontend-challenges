@@ -108,6 +108,7 @@ input[type="range"]::-webkit-slider-runnable-track {
   border: none;
   background: transparent;
 }
+
 .plan_discounts {
   display: flex;
   justify-content: right;
