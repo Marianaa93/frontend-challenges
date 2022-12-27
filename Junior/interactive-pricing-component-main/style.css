@@ -17,13 +17,31 @@ body {
 header {
   background-image: url("./images/pattern-circles.svg");
 }
+h1 {
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 38px;
+  text-align: center;
+  color: #293356;
+}
+
+p {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+
+  color: #848ead;
+}
 
 .card {
+  position: relative;
   width: 540px;
   background: #ffffff;
   box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
   border-radius: 8px;
   padding: 40px;
+  margin-top: 54px;
 }
 
 .price {
@@ -66,7 +84,6 @@ input[type="range"] {
   height: 0.5rem;
   background: #ecf0fb;
   border-radius: 0.3125rem;
-  margin-bottom: 2.5rem;
   outline: none;
 }
 
@@ -91,7 +108,32 @@ input[type="range"]::-webkit-slider-runnable-track {
   border: none;
   background: transparent;
 }
+.plan_discounts {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #848ead;
+  margin-top: 41px;
+  margin-bottom: 45px;
+  gap: 16px;
+}
 
+#discount_tag {
+  font-weight: 800;
+  font-size: 10px;
+  line-height: 14px;
+  text-align: center;
+  justify-content: center;
+  justify-self: center;
+  color: #ff8d68;
+  background: #feede8;
+  border-radius: 9.5px;
+  padding: 7px;
+}
 .discount {
   position: relative;
 }
@@ -124,4 +166,46 @@ input[type="checkbox"]:checked {
 
 input[type="checkbox"]:checked::after {
   left: 50%;
+}
+hr {
+  width: 100%;
+  position: absolute;
+  right: 0%;
+  top: auto;
+  color: #ecf0fb;
+}
+.submit {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+  align-items: center;
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  gap: 10px;
+  color: #848ead;
+}
+
+.icons {
+  padding-right: 16px;
+}
+
+button {
+  width: 170px;
+  height: 41px;
+  background: #293356;
+  border-radius: 20.5px;
+  font-weight: lighter;
+  font-size: 12px;
+  line-height: 13px;
+  text-align: center;
+  color: #becdff;
+  outline: 0;
+  border-style: none;
+  cursor: pointer;
 }
