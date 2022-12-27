@@ -26,7 +26,6 @@ header {
 }
 
 input[type="range"] {
-  appearance: auto;
   cursor: pointer;
-  color: hsl(174, 86%, 45%);
+  background-color: hsl(174, 86%, 45%);
 }
