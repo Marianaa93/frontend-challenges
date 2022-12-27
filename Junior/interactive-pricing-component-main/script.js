@@ -21,6 +21,4 @@ slider.oninput = function () {
   }
 };
 
-slider.addEventListener("mousemove", () => {
-  let m = slider.value * 3.12;
-});
+slider.addEventListener("mousemove", () => {});
