@@ -46,8 +46,12 @@ function labelFormat() {
 }
 
 slider.addEventListener("input", () => {
+  slider.style.background = `linear-gradient(to right, #A4F3EB ${
+    slider.value * 25
+  }%, #ddd ${slider.value}%)`;
   labelFormat();
   appliedDiscount();
+  slider.focus();
 });
 
 discountApplied.addEventListener("change", () => {
