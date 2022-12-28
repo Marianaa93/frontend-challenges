@@ -17,50 +17,56 @@
   </head>
 
   <body>
-    <header>
-      <h1>Simple, traffic-based pricing</h1>
-      <p>Sign-up for our 30-day trial. No credit card required.</p>
-    </header>
-    <section class="card">
+    <div class="wrap">
+      <header>
+        <h1>Simple, traffic-based pricing</h1>
+        <p>Sign-up for our 30-day trial. No credit card required.</p>
+      </header>
+      <section class="card">
 
-      <div class="price">
-        <div class="views"><span id="views">100k </span> PAGEVIEWS</div>
-        <div class="price_section">
-          <span id="price">$16.00</span> <span id="month">/ month</span>
+        <div class="price">
+          <div class="views"><span id="views">100k </span> PAGEVIEWS</div>
+          <section class="teste">
+            <div class="price_section">
+              <span id="price">$16.00</span> <span id="month">/ month</span>
+            </div>
+
+            <form action="" id="form_price">
+              <input type="range" value="2" min="0" max="4" id="slider">
+              <!-- <button><img src="./images/icon-slider.svg" alt="" class="slider"></button> -->
+            </form>
+          </section>
         </div>
-      </div>
-      <form action="" id="form_price">
-        <input type="range" value="2" min="0" max="4" id="slider">
-        <!-- <button><img src="./images/icon-slider.svg" alt="" class="slider"></button> -->
-      </form>
 
-      <div class="plan_discounts">
-        <span> Monthly Billing</span>
-        <div class="discount">
-          <input type="checkbox" class="toggle" id="discount">
-        </div>
-        <span> Yearly Billing</span>
-
-        <span id="discount_tag">25% discount</span>
-      </div>
-
-
-
-      <hr>
-      <div class="submit">
-        <div class="infos">
-          <div class="icon">
-            <img class="icons" src="./images/icon-check.svg">Unlimited websites
+        <div class="plan_discounts">
+          <span> Monthly Billing</span>
+          <div class="discount">
+            <input type="checkbox" class="toggle" id="discount">
           </div>
-          <div class="icon"><img class="icons" src="./images/icon-check.svg">100% data ownership</div>
-          <div class="icon"><img class="icons" src="./images/icon-check.svg">Email reports</div>
+          <span> Yearly Billing</span>
+
+          <span id="discount_tag">25% discount</span>
+          <span id="discount_responsive">25%</span>
         </div>
 
-        <button>Start my trial</button>
-      </div>
-    </section>
 
-    <script src="./script.js"></script>
+
+        <hr>
+        <div class="submit">
+          <div class="infos">
+            <div class="icon">
+              <img class="icons" src="./images/icon-check.svg">Unlimited websites
+            </div>
+            <div class="icon"><img class="icons" src="./images/icon-check.svg">100% data ownership</div>
+            <div class="icon"><img class="icons" src="./images/icon-check.svg">Email reports</div>
+          </div>
+
+          <button>Start my trial</button>
+        </div>
+      </section>
+
+      <script src="./script.js"></script>
+    </div>
   </body>
 
 </html>
