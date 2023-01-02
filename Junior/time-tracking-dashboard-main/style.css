@@ -1,0 +1,25 @@
+.menu{
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    display: flex;
+    min-width: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.tracking{
+    display: grid;
+    grid-template-columns: 150px 150px 150px ;
+    grid-template-rows: 150px 150px;
+    background-color: aquamarine;
+    height: 100px;
+    width: 100px;
+    gap:20px
+}
+
+.tracking_activities{
+    background-color: bisque;
+
+}

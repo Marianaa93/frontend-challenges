@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Time tracking dashboard</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,66 +15,84 @@
   </style>
 </head>
 <body>
+  <div class="container">
+    <section class="menu">
+     <p id="report">Report for <span>Jeremy Robson</span></p> 
+      <a>Daily</a>
+      <a>Weekly</a>
+     <a>Monthly</a> 
+    </section>
 
-  Report for
-  Jeremy Robson
+    <section class="tracking">
+      
+      <div class="tracking_activities">
+        <span class="activity">Work</span> 
+        <h2 class="tracking__daily" id="dailyWork">5hrs</h2> <!-- daily -->
+        <small class="previous" id="lastDailyWork">Previous - 7hrs</small> <!-- daily -->
+        <h2 class="tracking__weekly" id="weeklyWork"> 32hrs</h2> <!-- weekly -->
+        <small class="previous" id="lastWeekWork">Previous - 36hrs</small> <!-- weekly -->
+        <h2 class="tracking__monthly" id="lastMonthlyWork">103hrs</h2> <!-- monthly -->
+        <small class="previous" id="lastWeekWork">Previous - 128hrs </small><!-- monthly -->
+      </div>
 
-  Daily
-  Weekly
-  Monthly
+      <div class="tracking_activities"> 
+        <span class="activity">Play</span>
+        <h2 class="tracking__daily" id="dailyPlay">1hr</h2> <!-- daily -->
+        <small class="previous" id="lastDailyPlay"> Previous - 2hrs</small> <!-- daily -->
+        <h2 class="tracking__weekly"  id="weeklyPlay">10hrs</h2> <!-- weekly -->
+        <small class="previous" id="lastWeeklyPlay">Previous - 8hrs</small> <!-- weekly -->
+        <h2 class="tracking__monthly" id="monthlyPlay">23hrs</h2> <!-- monthly -->
+        <small class="previous" id="lastMontlhyPlay">Previous - 29hrs </small><!-- monthly -->
+      </div>
+      
+      <div class="tracking_activities"  id="study">
+        <span class="activity">Study</span> 
+        <h2 class="tracking__daily" id="dailyStudy">0hrs</h2> <!-- daily -->
+        <small class="previous" id="lastDailyStudy">Previous - 1hr</small> <!-- daily -->
+        <h2 class="tracking__weekly" id="weeklyStudy">4hrs</h2> <!-- weekly -->
+        <small class="previous" id="lastWeeklyStudy">Previous - 7hrs</small> <!-- weekly -->
+        <h2 class="tracking__monthly" id="monthlyStudy">13hrs</h2> <!-- monthly -->
+        <small class="previous" id="lastMonthlyStudy">Previous - 19hrs</small> <!-- monthly -->
+      </div>
 
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
+      <div class="tracking_activities" id="exercise">
+        <span class="activity">Exercise</span> 
+        <h2 class="tracking__daily" id="dailyExercise">1hr</h2> <!-- daily -->
+        <small class="previous" id="lastWeeklyExercise">Previous - 1hr</small> 
+        <h2 class="tracking__weekly" id="montlhyExercise">4hrs</h2> <!-- weekly -->
+        <small class="previous">Previous - 5hrs </small><!-- weekly -->
+        <h2 class="tracking__monthly" id="monthlyExercise">11hrs</h2> <!-- monthly -->
+        <small class="previous" id="lastMontlyExercise">Previous - 18hrs</small> <!-- monthly -->
+      </div>
 
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
+      <div class="tracking_activities" id="social">
+        <span class="activity">Social</span> 
+        <h2 class="tracking__daily" id="dailySocial">1hr</h2> <!-- daily -->
+        <small class="previous" id="lastDailySocial">Previous - 3hrs </small><!-- daily -->
+        <h2 class="tracking__weekly" id="weeklySocial">5hrs</h2> <!-- weekly -->
+        <small class="previous" id="lastWeeklySocial">Previous - 10hrs</small> <!-- weekly -->
+        <h2 class="tracking__monthly" id="monthlySocial">21hrs</h2> <!-- monthly -->
+        <small class="previous" id="lastMontlhySocial">Previous - 23hrs</small> <!-- monthly -->
+      </div>
 
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
+      <div class="tracking_activities" id="selfCare">
+        <span class="activity">Self Care</span> 
+        <h2 class="tracking__daily" id="dailySelfCare">0hrs</h2> <!-- daily -->
+        <small class="previous" id="lastDailySelfCare">Previous - 1hr </small>
+      <h2 class="tracking__weekly" id="weeklySelfCare">2hrs</h2> <!-- weekly -->
+        <small class="previous" id="lastWeeklySelfCare">Previous - 2hrs </small><!-- weekly -->
+        <h2 class="tracking__monthly" id="montlhySelfCare">7hrs</h2> <!-- monthly -->
+        <small class="previous" id="lastMontlhySelfCare">Previous - 11hrs</small> <!-- monthly -->
+      </div>
 
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
 
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
+    </section>
 
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <script src="./script.js"></script>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
   </div>
-</body>
+ </body>
 </html>
