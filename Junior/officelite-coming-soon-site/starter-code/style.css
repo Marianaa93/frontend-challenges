@@ -97,7 +97,7 @@ color: #333950;
     align-content: center;
     justify-content: center;
     align-self: center;
-    margin-left: 140px;
+    margin-left: 76px;
 }
 
 .card{
@@ -114,16 +114,15 @@ color: #333950;
 
 .card--blue{
     background: #5175FF;
-    box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
-    border-radius: 13px;
-    color:#fff
+    
+    
 }
 
-.card--blue span{
-    color: #fff;
-}
 
-span{
+
+
+
+.span{
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -176,7 +175,7 @@ footer{
     width: 50%;
     align-items: center;
     justify-content: center;
-    background-color:  #829CFF ;
+    background-color:  #e2e8fc ;
     border-radius: 28px;
     border-style: none;
     color:#5175FF;
@@ -187,6 +186,10 @@ footer{
     margin-top: 32px;
     margin-bottom: 40px;
     
+}
+
+.card--blue .button-trial  {
+    background-color: #fff;
 }
 
 .countdown {
@@ -236,3 +239,8 @@ footer{
     border-radius: 28px;
     border-style: none;
   }
+
+
+   .card--blue .text--white {
+    color: #fff !important;
+}
