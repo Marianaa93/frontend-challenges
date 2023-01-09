@@ -33,19 +33,19 @@ header{
 
 h1{
     font-style: normal;
-font-weight: 700;
-font-size: 56px;
-line-height: 64px;
-color: #333950;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 64px;
+    color: #333950;
 
 }
 
 h5{
     font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 28px;
-color: #333950;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: #333950;
 }
 
 .price{
@@ -66,6 +66,7 @@ color: #333950;
     width: 500px;
     flex: 1;
 
+
 }
 
 .introduction{
@@ -82,6 +83,7 @@ color: #333950;
     font-size: 18px;
     line-height: 28px;
     color: #747B95;
+    margin-bottom: 32px;
 
 }
 
@@ -92,17 +94,17 @@ color: #333950;
 
 .cards{
     display: flex;
-    position: absolute;
+    position: relative;
     gap:30px;
     align-content: center;
     justify-content: center;
     align-self: center;
-    margin-left: 76px;
+    margin-top:184px;
+    z-index: 2;
 }
 
 .card{
     width: 300px;
-    height: 508px;
     background: #FFFFFF;
     box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
     border-radius: 13px;
@@ -113,9 +115,10 @@ color: #333950;
 }
 
 .card--blue{
-    background: #5175FF;
-    
-    
+    background: #5175FF; 
+    background-image: url("./assets/home/bg-pattern-pricing.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 
@@ -141,17 +144,19 @@ color: #333950;
     margin-top: 8px;
 }
 
-footer{
-    /* position: relative; */
-    background-image: url("./assets/home/bg-pattern-footer.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top:120px;
+footer {
+    background-image: url(./assets/home/bg-pattern-footer.svg);
     background-color: #25293A;
-    padding-top:450px;
     width: 100%;
+    display: flex;
+    gap: 50%;
+    align-items: center;
 }
+
+
+
 .label_footer{
+    margin-top: 82px;;
     margin-left: 145px;
     font-weight: 700;
     font-size: 16px;
@@ -164,10 +169,6 @@ footer{
 
 #date{
     color:#5175FF;
-}
-.container{
-    display: flex;
-    justify-content: space-around;
 }
 
 .button-trial{
@@ -238,9 +239,74 @@ footer{
     box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
     border-radius: 28px;
     border-style: none;
+    text-decoration: none !important;
+
   }
 
+  .get_started:hover{
+    cursor: pointer !important;
+  }
 
-   .card--blue .text--white {
+   #text--white {
     color: #fff !important;
+}
+
+
+.container-countdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 445px;
+    padding: 43px;
+    background: #FFFFFF;
+    box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
+    border-radius: 13px;
+    gap:24px;
+    position: absolute;
+    left: 55%;
+}
+
+form input{
+    width: 100%;
+    color: #747B95;
+    border: none;
+   
+}
+label{
+    border-bottom:  #747B95;
+    border-bottom-style: solid;
+    margin-top:16px;
+}
+
+form input::placeholder{
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color:  #747B95;
+}
+
+.wrap-signup{
+    background-image: url("./assets/sign-up/bg-pattern-side.svg");
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-left:165px;
+}
+
+.aside{
+    position:relative;
+    z-index: -1;
+    min-height: 100vh;
+    width:420px;
+    background-color: #25293A;
 }
