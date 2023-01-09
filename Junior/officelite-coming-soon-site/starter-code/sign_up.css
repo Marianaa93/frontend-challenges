@@ -48,25 +48,15 @@ h5{
     color: #333950;
 }
 
-.price{
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 64px;
-    color: #333950;
-    margin-bottom: 0;
-    margin-top: 40px;
-}
 
 #header-img{
     width: 100%;
-   
+
 }
 
 #informations{
     width: 500px;
     flex: 1;
-
-
 }
 
 .introduction{
@@ -87,121 +77,15 @@ h5{
 
 }
 
-
-.img_header{
-    flex: 1;
-}
-
-.cards{
-    display: flex;
-    position: relative;
-    gap:30px;
-    align-content: center;
-    justify-content: center;
-    align-self: center;
-    margin-top:184px;
-    z-index: 2;
-}
-
-.card{
-    width: 300px;
-    background: #FFFFFF;
-    box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
-    border-radius: 13px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-.card--blue{
-    background: #5175FF; 
-    background-image: url("./assets/home/bg-pattern-pricing.svg");
-    background-repeat: no-repeat;
-    background-position: bottom;
-}
-
-
-
-
-
-.span{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 28px;
-    text-align: center;
-    color: #747B95;
-}
-
-.info{
-    display: flex;
-    flex-direction: column;
-    margin-top: 56px;
-}
-
-.userLimit{
-    margin-top: 8px;
-}
-
-footer {
-    background-image: url(./assets/home/bg-pattern-footer.svg);
-    background-color: #25293A;
-    width: 100%;
-    display: flex;
-    gap: 50%;
-    align-items: center;
-}
-
-
-
-.label_footer{
-    margin-top: 82px;;
-    margin-left: 145px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 48px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-
-}
-
-#date{
-    color:#5175FF;
-}
-
-.button-trial{
-    padding:16px;
-    width: 50%;
-    align-items: center;
-    justify-content: center;
-    background-color:  #e2e8fc ;
-    border-radius: 28px;
-    border-style: none;
-    color:#5175FF;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    text-align: center;
-    margin-top: 32px;
-    margin-bottom: 40px;
-    
-}
-
-.card--blue .button-trial  {
-    background-color: #fff;
-}
-
 .countdown {
     display: flex;
-    gap: 16px;
     align-items: center;
     justify-content: center;
     text-align: center;
    justify-content: space-around;
    margin-bottom: 101px;
-  }
+}
+
   
   .time {
     width: 100px;
@@ -248,8 +132,8 @@ footer {
   }
 
    #text--white {
-    color: #fff !important;
-}
+    color: #fff !important;}
+
 
 
 .container-countdown {
@@ -260,3 +144,71 @@ footer {
 }
 
 
+
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 445px;
+    padding: 43px;
+    background: #FFFFFF;
+    box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
+    border-radius: 13px;
+    gap:24px;
+    position: absolute;
+    left: 55%;
+}
+
+form input{
+    width: 100%;
+    color: #747B95;
+    border: none;
+   
+}
+label{
+    border-bottom:  #747B95;
+    border-bottom-style: solid;
+    margin-top:16px;
+}
+
+form input::placeholder{
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color:  #747B95;
+}
+
+.wrap-signup{
+    background-image: url("./assets/sign-up/bg-pattern-side.svg");
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-left:165px;
+}
+
+.label_footer{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 48px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #333950;
+}
+
+#date{
+    color:#5175FF;
+}
+
+
+
+.aside{
+    position:relative;
+    z-index: -1;
+    min-height: 100vh;
+    width:420px;
+    background-color: #25293A;
+}
