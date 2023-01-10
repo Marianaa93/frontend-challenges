@@ -167,8 +167,11 @@ form input{
    
 }
 label{
-    border-bottom:  #747B95;
-    border-bottom-style: solid;
+    border-bottom-color:solid #747B95;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    /* border-bottom:  #747B95;
+    border-bottom-style: solid; */
     margin-top:16px;
 }
 
