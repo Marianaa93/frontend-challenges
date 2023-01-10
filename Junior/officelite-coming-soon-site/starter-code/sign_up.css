@@ -171,6 +171,10 @@ form input{
     line-height: 28px;
     color: #25293A;   
 }
+form select{
+    border: none;
+    width: 100%;
+}
 
 form label{ 
     mix-blend-mode: normal;
